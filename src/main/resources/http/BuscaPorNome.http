@@ -1,0 +1,6 @@
+POST http://localhost:8080/api/produtos/nome
+Content-Type: application/json
+
+{
+  "nome": "Peito de Frango"
+}

@@ -1,0 +1,9 @@
+POST http://localhost:8080/api/produtos/inserir
+Content-Type: application/json
+
+{
+  "nome": "a",
+  "descricao": "Carne adequada para churrasco",
+  "preco": 10,
+  "quantidadeEstoque": 200
+}

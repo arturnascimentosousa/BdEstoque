@@ -1,0 +1,9 @@
+PATCH http://localhost:8080/api/produtos/atualizarParcial/13
+Content-Type: application/json
+
+{
+  "nome": "Picanha",
+  "descricao": "Carne adequada para churrasco",
+  "preco": 10,
+  "quantidadeEstoque": 200
+}

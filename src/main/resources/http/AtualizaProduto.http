@@ -1,0 +1,9 @@
+PUT http://localhost:8080/api/produtos/atualizar/13
+Content-Type: application/json
+
+{
+  "nome": "M",
+  "descricao": "Carne adequada para churrasco",
+  "preco": -1,
+  "quantidadeEstoque": 200
+}
