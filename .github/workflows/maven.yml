@@ -39,6 +39,15 @@ jobs:
           service-id: srv-cr2b5rdsvqrc73cma1p0
           # A Render API key
           api-key: rnd_LLXLiGZVDmIkmMktYQm1sWIMAdDB
-
+  
+    - name: Deploy Ec2
+      run: |
+        echo "${{secrets.ec2}}" >private_key && chmod 400 private_key
+        ssh -o StrictHostKeyChecking=no -i private_key ubuntu@ec2-98-83-74-20.compute-1.amazonaws.com "
+              cd/home/ubuntu/springEasy-Render && 
+              git pull &&
+              mvn clean package -DskipTests &&
+              ./executar.sh "
+              
                 
               
