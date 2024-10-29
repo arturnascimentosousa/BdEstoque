@@ -47,6 +47,7 @@ jobs:
               cd /home/ubuntu/BdEstoque && 
               git pull &&
               mvn clean package -DskipTests &&
+              cd .. && 
               ./executar.sh "
               
                 
