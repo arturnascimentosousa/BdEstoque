@@ -45,7 +45,7 @@ jobs:
         echo "${{secrets.TU}}" >spring-ge-tu && chmod 400 spring-ge-tu
         ssh -o StrictHostKeyChecking=no -i spring-ge-tu ubuntu@ec2-44-207-117-71.compute-1.amazonaws.com "
               cd/home/ubuntu/BdEstoque && 
-              sudo git pull origin main &&
+              git pull &&
               mvn clean package -DskipTests &&
               ./executar.sh "
               
