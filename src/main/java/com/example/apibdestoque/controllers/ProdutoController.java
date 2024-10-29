@@ -35,7 +35,7 @@ public class ProdutoController {
         this.validator = validator;
     }
 
-    @GetMapping("/selecionar")
+    @GetMapping("/listar")
     @Operation(summary = "Retorna todos os produtos", description = "Retorna todos os produtos legais, ponto final.")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200", description = "Successful operation",
